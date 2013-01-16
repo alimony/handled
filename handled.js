@@ -35,9 +35,10 @@
 // you smart people out there. Let me know of any ideas or thoughts!
 //
 
+var path = require('path');
 var configFilename = 'handled.config.js';
 try {
-	var config = require('./' + configFilename);
+	var config = require(path.resolve(process.cwd(), configFilename));
 }
 catch (e) {
 	console.log('Could not find ' + configFilename + ', exiting.');
@@ -45,7 +46,6 @@ catch (e) {
 }
 
 var fs = require('fs');
-var path = require('path');
 
 // We expect all arguments to be paths to HTML files to be processed.
 var htmlFiles = process.argv.slice(2);
@@ -67,7 +67,7 @@ htmlFiles.forEach(function (currentFilePath) {
 		});
 
 		// Second, look for multiline variables.
-		var multiPattern = /<!-- \{\{ (\w+) -->\n([^]*)\n\W*?<!-- \}\} -->\n/g;
+		var multiPattern = /<!-- \{\{ (\w+) -->\n([^]*?)\n\W*?<!-- \}\} -->/g;
 		html = html.replace(multiPattern, function (match, variableName, contents) {
 			if (typeof config[variableName] !== 'function') {
 				console.log('Could not find function "' + variableName + '" in ' + configFilename + ', exiting.');
