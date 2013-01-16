@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+/*jshint camelcase:false */
+
 'use strict';
 
 //
@@ -16,7 +18,7 @@
 //     <!-- {{ replace_this_variable }} -->
 exports.replace_this_variable = function () {
 	return 'replaced';
-}
+};
 
 // Handler for:
 //     <-- {{ replace_these_contents -->
@@ -24,4 +26,4 @@ exports.replace_this_variable = function () {
 //     <!-- }} -->
 exports.replace_these_contents = function (contents) {
 	return 'foo' + contents + 'bar';
-}
+};
