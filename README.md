@@ -82,4 +82,4 @@ This is basically just a proof-of-concept of an idea I had on how to do some pre
 There is room for much improvement on this concept, and there are a lot of you smart people out there. Let me know of any ideas or thoughts!
 
 
-Created by [Markus Amalthea Magnuson](mailto:markus.magnuson@gmail.com)
+Created by [Markus Amalthea Magnuson](mailto:markus@polyscopic.works)

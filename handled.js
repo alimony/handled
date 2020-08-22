@@ -5,7 +5,7 @@
 //
 // handled.js
 //
-// Created by Markus Amalthea Magnuson <markus.magnuson@gmail.com>
+// Created by Markus Amalthea Magnuson <markus@polyscopic.works>
 //
 // This node script will look for handlebar-style variables in HTML comments and
 // output new HTML files with the variables replaced by the output of
