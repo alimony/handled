@@ -7,7 +7,7 @@
 //
 // handled.js
 //
-// Created by Markus Amalthea Magnuson <markus.magnuson@gmail.com>
+// Created by Markus Amalthea Magnuson <markus@polyscopic.works>
 //
 // This file will be imported by handled.js and used for processing HTML files
 // containing handlebar-style comments. All found variable names should match a
